@@ -15,19 +15,17 @@ export interface FormWrapperProps<T> extends ReactWithChild {
 
 export type FormDrawerRef = FormInstance<Store>;
 
-function FormWrapper<T extends Store>(
-  {
-    children,
-    formProps,
-    initialValues,
-    onFinish,
-    onValuesChange,
-    confirmButtonText = "Create",
-    isLoading = false,
-    className,
-  }: FormWrapperProps<T> & React.RefAttributes<Store>,
-  ref?: React.Ref<FormDrawerRef>
-) {
+function FormWrapper<T extends Store>({
+  children,
+  formProps,
+  initialValues,
+  onFinish,
+  onValuesChange,
+  confirmButtonText = "Create",
+  isLoading = false,
+  className,
+}: FormWrapperProps<T> & React.RefAttributes<Store>) {
+  // ref?: React.Ref<FormDrawerRef>
   const [form] = Form.useForm<T>();
 
   useEffect(() => {
@@ -39,7 +37,7 @@ function FormWrapper<T extends Store>(
       className={className}
       form={form}
       layout="vertical"
-      ref={ref}
+      // ref={ref}
       {...formProps}
       initialValues={initialValues}
       onFinish={onFinish}
