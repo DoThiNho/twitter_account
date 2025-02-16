@@ -16,12 +16,12 @@ const ProductList = ({ isHideSeeAllButton }: ProductListProps) => {
   return (
     <Element name="products">
       <div className="w-[80%] mx-auto mt-[100px]">
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center mb-4">
           <Button onClick={() => handleNavigate("/")}>
             <ArrowLeftOutlined />
             Quay lại
           </Button>
-          <h2 className="flex-1 text-center text-4xl font-bold mb-8">
+          <h2 className="flex-1 text-center lg:text-4xl font-bold">
             TWITTER ACCOUNT
           </h2>
           <Button

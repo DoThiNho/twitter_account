@@ -19,10 +19,10 @@ const ProductDetail = () => {
           Quay lại
         </Button>
         <Row gutter={16}>
-          <Col span={12}>
-            <img src={ProductImg} alt="" width={"80%"} />
+          <Col xs={24} sm={24} md={12} lg={12} xl={12} className="mb-4">
+            <img src={ProductImg} alt="" className="lg:w-[80%]" />
           </Col>
-          <Col span={12} className="">
+          <Col xs={24} sm={24} md={12} lg={12} xl={12}>
             <h3 className="text-2xl font-bold cursor-pointer hover:text-blue-500">
               Bán acc Twitter (X) Tick Xanh - TK Cổ
             </h3>

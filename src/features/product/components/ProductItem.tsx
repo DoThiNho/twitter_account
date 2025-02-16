@@ -10,10 +10,17 @@ const ProductItem = () => {
   return (
     <div className="border border-black p-4 rounded mb-8">
       <Row gutter={16}>
-        <Col span={4}>
+        <Col xs={24} sm={24} md={4} lg={4} xl={4} className="mb-4">
           <img src={TwitterImg} alt="" />
         </Col>
-        <Col span={20} className="flex flex-col justify-center">
+        <Col
+          xs={24}
+          sm={24}
+          md={20}
+          lg={20}
+          xl={20}
+          className="flex flex-col justify-center"
+        >
           <h3
             className="text-2xl font-bold cursor-pointer hover:text-blue-500"
             onClick={() => handleNavigate("/product/123")}
